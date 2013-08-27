@@ -1,0 +1,3 @@
+Existen 2 html:
+	- restaurante.html: parte pública de la web sobre la que se basa el frontend
+	- user-logged.html: parte privada de la web para usuarios autenticados, algunos estilos de gestión los consideramos backend y no están subidos

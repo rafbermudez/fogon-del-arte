@@ -1,0 +1,380 @@
+/*************** GLOBAL TAG STYLES ************************/
+
+html,body {
+	height: 100%;
+	margin:0;
+	padding:0;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 0.9em;
+}
+
+body{
+	
+	background: url("../images/inside_restaurant.jpg") no-repeat scroll 0 0 transparent;
+	background-color: #D9D9D9; 
+	background-size: cover;
+}
+
+section {
+	background-color: white;
+	/*opacity: 0.8;*/
+	background-color: rgba(255,255,255,0.8);
+	float: left;
+	height: 100%;
+	width: 40%;
+}
+
+ul {
+	list-style: none;
+	margin:0;
+	font-size: 1.1em
+}
+
+/************************ GENERIC CLASSES *****************************/
+.top_line{
+	border-top: 1px solid white;
+}
+
+.map-icon{
+	background: url("../images/mapIcon.png") no-repeat scroll 0 10px transparent;
+}
+
+.phone-icon{
+	background: url("../images/phoneIcon.png") no-repeat scroll 0 10px transparent;
+}
+
+.email-icon{
+	background: url("../images/emailIcon.png") no-repeat scroll 0 10px transparent;
+}
+
+.scrollable-y{
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+/************************ MAIN SECTION *****************************/
+
+#main-section{
+	float: left;
+	width: 20%;
+	height: 100%;
+	margin-left: 5%;
+	background-color: #1C1C1C;
+	color:white;
+	opacity: 1;
+}
+
+#main-section nav{
+	text-align: center;
+	margin-top: 5%;
+}
+
+#main-section nav ul li{
+	margin-top:1%;
+	cursor: pointer;
+}
+
+#dd-menu li:hover{
+	background-color: white;
+	color:black;
+}
+
+#main-section footer{
+	text-align: left;
+	width: 20%;
+	position: absolute;
+	bottom: 0;
+	background-color: #1D1D1D;
+	border-top: 5px solid white;
+
+
+}
+
+#main-section footer ul{
+	padding-top:5%;
+	padding-bottom:5%;
+	padding-left:6%;
+}
+
+#main-section footer li{
+	padding-top:3%;
+	padding-bottom:3%;
+	padding-left:20px;
+	padding-right: 3%;
+}
+
+#menu-trigger { 
+	display: none;
+}
+
+/*************** CONTENT ********************/
+
+#switch2{
+ background-color: white;
+ float:left;
+ cursor:pointer;
+ width:30px;
+ height: 30px;
+ border-radius: 0 5px 5px 0;
+ margin-top: 40%;
+}
+
+#switch{
+	background: url("../images/x.png") no-repeat scroll 0 10px transparent;
+	background-color: white;
+	opacity: 0.8;
+    float:left;
+    cursor:pointer;
+    width: 28px;
+    padding:10px 0;
+    border-radius: 0 20px 20px 0;
+    margin-top: 40%;
+}
+
+#main-section header{
+	text-align: center;
+	max-width: 100%;
+	margin-top:5%;
+
+
+}
+
+.content-section article{
+	padding:6%;
+	max-height: 87%;
+	float:left;
+	width:82%;
+}
+
+.content-section article header{
+	border-bottom: 1px solid black;
+	text-align: center;
+	width:80%;
+	margin-bottom: 5%;
+	margin-left: 10%;
+}
+
+.iframe-rwd  {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+background-color: white;
+}
+.iframe-rwd iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.content-section small{
+	float:left;
+	margin-bottom: 10%;
+	width: 100%;
+}
+
+.menu-selection{
+	font-size:0.9em;
+	font-family: cursive;
+	text-align: center;
+}
+
+.menu-selection .father{
+	font-weight: bold;
+}
+
+
+.reservation-icons{
+	text-align: center;
+	width: 100%;
+	float:left;
+}
+
+#login article form, #login article div {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#login article form label {
+	color: gray;
+}
+
+#login article form div.submit {
+	text-align: center;
+}
+
+#login article form div.submit .btn {
+	margin-top: 1em;	
+}
+
+.content-logged{
+  width: 60%;
+}
+
+.content-logged table.table-striped th {
+	color: white;
+	background-color: #1D1D1D; 
+}
+
+/*************************** RESPONSIVE STYLES - MEDIA SCREEN *******************************/
+
+@media screen and (max-width: 800px) {
+
+	html{
+		height: auto;
+	}
+
+	section{
+		height: inherit;
+
+	}
+
+	.scrollable-y{
+		overflow-y: hidden;
+	}
+
+	#switch {
+		display: none;
+	}
+
+	#main-section{
+		width:100%;
+		margin:0;
+	}
+
+	#main-section header{
+		padding-top: 0;
+	}
+
+	#main-section footer{
+		width:100%;
+		position: relative;
+		bottom: inherit;
+	}
+
+	#main-section footer li{
+	padding-top:1%;
+	padding-bottom:1%;
+	}
+
+	.content-section{
+		width:100%;
+		margin:0;
+	}
+
+	#wrap-dd-menu {
+		position: relative;
+	}
+
+	#wrap-dd-menu * {
+		box-sizing: border-box;
+	}
+
+	#menu-trigger {
+		display: block; /* Show it now */
+		height: 40px;
+		line-height: 40px;
+		cursor: pointer;		
+		padding: 0 0 0 35px;
+		border: 1px solid #222;
+		color: #fafafa;
+		font-weight: bold;
+		background-color: #111;
+		background: linear-gradient(#444, #111);
+		border-radius: 6px;
+		box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+	}
+
+	#dd-menu {
+		margin: 0;
+		position: absolute;
+		background-color: white;
+		color:black;
+		top: 40px;
+		width: 100%;
+		z-index: 1;
+		display: none;
+		box-shadow: none;	
+		border-bottom: 1px solid #1D1D1D;	
+	}
+
+	#dd-menu:after {
+		content: '';
+		position: absolute;
+		left: 25px;
+		top: -8px;
+		border-left: 8px solid transparent;
+		border-right: 8px solid transparent;
+		border-bottom: 8px solid #444;
+	}	
+
+	#dd-menu ul {
+		position: static;
+		visibility: visible;
+		opacity: 1;
+		margin: 0;
+		background: none;
+		box-shadow: none;
+	}
+
+	#dd-menu ul ul {
+		margin: 0 0 0 20px !important;
+		box-shadow: none;		
+	}
+
+	#dd-menu li {
+		position: static;
+		display: block;
+		float: none;
+		border: 0;
+		box-shadow: none;
+		color: #1D1D1D;
+		background-color:white;			
+	}
+
+	#dd-menu li:hover {
+		background-color: #1D1D1D;
+		color:white;
+
+	}
+
+	#dd-menu ul li{
+		box-shadow: none;
+	}
+
+	#dd-menu a{
+		display: block;
+		float: none;
+		padding: 0;
+		color: #999;
+	}
+
+	#dd-menu a:hover{
+		color: #fafafa;
+	}	
+
+	#dd-menu ul a{
+		padding: 0;
+		width: auto;		
+	}
+
+	#dd-menu ul a:hover{
+		background: none;	
+	}
+
+	#dd-menu ul li:first-child a:after,
+	#dd-menu ul ul li:first-child a:after {
+		border: 0;
+	}		
+
+}
+
+@media screen and (min-width: 800px) {
+	#dd-menu {
+		display: block !important;
+	}
+}
+
