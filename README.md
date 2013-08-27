@@ -7,7 +7,7 @@ HTML5, CSS3, JQuery, optimizado para SEO.
 
 Autores
 
-* Manuel Ayaso Enríquez
+* Manuel Ayaso Enríquez : @manu_ayaso
 * Rafael Bermúdez Míguez : @rafbermudez
 
 Documentación
